@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="modal.js"></script>
+    <title>Animal Website - Register</title>
+</head>
+
+<body>
+    <header>
+        <a href="#main-content" class="skiplink">Skip to Main Content</a>
+        <nav>
+            <span class="menu-icon" tabindex="0" role="button" aria-expanded="false" onclick="toggleMenu()" onkeydown="handleMenuKeydown(event)">&#9776;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <a href="index.html">
+            <img class="logo-register" img src="image/Cat_logo3.jpg" alt="Cat Logo3">
+        </a>
+    </header>
+
+    <main id="main-content">
+        <h1>Vote & Rewards</h1>
+        <form action="/register" method="post">
+            <div class="form-column">
+                <label for="name">Name<sup>*</sup></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-column">
+                <label for="email">Email<sup>*</sup></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-column">
+                <fieldset>
+                    <legend>Which competitor you like most?</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="vote1" name="vote" value="MUMU" required>
+                        <label for="vote1">MUMU</label>
+                        <input type="radio" id="vote2" name="vote" value="NIA" required>
+                        <label for="vote2">NIA</label>
+                        <input type="radio" id="vote3" name="vote" value="BOBO" required>
+                        <label for="vote3">BOBO</label>
+                        <input type="radio" id="vote4" name="vote" value="ANGELA" required>
+                        <label for="vote4">ANGELA</label>
+                        <input type="radio" id="vote5" name="vote" value="FIFI" required>
+                        <label for="vote5">FIFI</label>
+                        <input type="radio" id="vote6" name="vote" value="ZHIMA" required>
+                        <label for="vote6">ZHIMA</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-column">
+                <fieldset>
+                    <legend>Which activity you prefer to attend?</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="interest1" name="interest" value="Put My Cat In Race" required>
+                        <label for="interest1">Put My Cat In Race</label>
+                        <input type="radio" id="interest2" name="interest" value="Cat Clubs and Activities" required>
+                        <label for="interest2">Cat Clubs and Activities</label>
+                        <input type="radio" id="interest3" name="interest" value="Cat Adopt" required>
+                        <label for="interest3">Cat Adopt</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-column">
+                <label for="info">Rewards Preference<sup>*</sup></label>
+                <select id="info" name="info" required>
+                    <option value="" disabled>Select One</option>
+                    <option value="Git Cards">Git Cards</option>
+                    <option value="Money">Money</option>
+                    <option value="Free Travel">Free Travel</option>
+                </select>
+            </div>
+            <div class="form-column">
+                <button type="submit">Vote</button>
+            </div>
+        </form>
+        <p><sup>*</sup> Fields marked with an asterisk are required.</p>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Private Policy</a></li>
+                <li><a href="#">Work for Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Social Media</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
