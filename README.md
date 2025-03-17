@@ -113,6 +113,8 @@ This webpage can be viewed and used by running:
 * Create a feature branch named 'project2' (`git checkout -b project2`)
 * Add the necessary files to have the required features
   - running `npm install` will create a `package-lock.json` file and a `node_modules` directory.  These should NOT be added to your commit.
+ 
+© Muyun Ji. Confidential and Proprietary. All Rights Reserved.
 * add, commit, and push the branch to github
 * Create a PR to merge to main
 * Be sure to include the TA(s) and myself reviewer(s)
